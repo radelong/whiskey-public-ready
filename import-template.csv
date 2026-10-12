@@ -1,0 +1,3 @@
+name,distillery,category,age_years,abv,size_ml,purchase_date,purchase_price,status,remaining_pct,location,notes
+Example Bourbon,Example Distillery,Bourbon,8,45,750,2000-01-01,50,sealed,,Example shelf,Synthetic example row
+Example Rye,Example Distillery,Rye,,46,750,,,open,75,Example shelf,Synthetic example row

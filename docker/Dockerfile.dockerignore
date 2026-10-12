@@ -1,0 +1,14 @@
+# Build-context excludes (context = repo root). Requires BuildKit, which is
+# Docker's default — the build still works without it, just with a bigger context.
+.git
+.github
+node_modules
+**/node_modules
+dist
+**/dist
+.wrangler
+.dev.vars
+worker-configuration.d.ts
+*.tsbuildinfo
+docker/data
+docker/.env

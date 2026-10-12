@@ -1,0 +1,22 @@
+name: whiskey-cellar
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: whiskey-cellar:latest
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - data:/data # SQLite database lives here
+    environment:
+      SESSION_SECRET: "${SESSION_SECRET:-}"
+      ADMIN_EMAIL: "${ADMIN_EMAIL:-}"
+      RESEND_API_KEY: "${RESEND_API_KEY:-}"
+      ACCESS_TEAM: "${ACCESS_TEAM:-}"
+      ACCESS_AUD: "${ACCESS_AUD:-}"
+
+volumes:
+  data:

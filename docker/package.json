@@ -1,0 +1,15 @@
+{
+  "name": "whiskey-cellar-container",
+  "private": true,
+  "type": "module",
+  "description": "Node/SQLite build of the app for running as a Docker image",
+  "dependencies": {
+    "@hono/node-server": "^1.14.0"
+  },
+  "overrides": {
+    "hono": "4.13.7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}
